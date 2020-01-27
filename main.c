@@ -88,7 +88,7 @@ int		main(int ac, char *av[])
 	fd = open(av[1], O_RDONLY);
 	if (!(list = read_tetr(fd)))
 	{
-		ft_putstr("error");
+		ft_putstr("error\n");
 		return (1);
 	}
 	map = solve(list);
